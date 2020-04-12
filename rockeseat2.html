@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Treino de funções</title>
+    </head>
+    <body>
+        <script>
+            function soma(number1, number2){
+                var resultado = number1 + number2;
+
+                return resultado;
+            }
+            
+            var resultado = soma(1023, 57);
+            console.log(resultado);
+
+            function sexshop(sexo){
+                /*if (sexo == "M"){
+                    return 'Masculino';
+                } 
+                else if (sexo == "F"){
+                    return 'Feminino';
+                }
+                else {
+                    return 'outro';
+                } */
+                switch(sexo){
+                    case "M":
+                        return 'Masculino';
+                    case "F":
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                } 
+            
+            
+            }
+
+
+            var resultado1 = sexshop('M');
+            console.log(resultado1);
+        </script>
+    </body>
+</html>

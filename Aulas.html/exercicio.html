@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De que país você é?</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+
+        input {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digite seu país</h1>
+    Digite seu país: <input type="txt" name="txtp" id="txtp">
+    <input type="button" value="verificar" onclick="analise()">
+    <div id="res"></div>
+    <script>
+        function analise() {
+            var nac = document.querySelector('input#txtp')
+            var country = nac.value
+            if (country == "Brasil") {
+                res.innerHTML += 'você é brasileiro'
+            } else {
+                res.innerHTML += "você é estrangeiro"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
